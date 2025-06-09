@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>이소현 포트폴리오</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- 헤더 -->
+  <header class="bg-gray-900 text-white p-6">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">이소현 포트폴리오</h1>
+      <nav>
+        <a href="#about" class="px-3 hover:underline">소개</a>
+        <a href="#projects" class="px-3 hover:underline">프로젝트</a>
+        <a href="#skills" class="px-3 hover:underline">기술 스택</a>
+        <a href="#contact" class="px-3 hover:underline">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 소개 섹션 -->
+  <section id="about" class="py-16 px-6 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-4">안녕하세요!</h2>
+      <p class="text-lg mb-4">
+        저는 <strong>이소현</strong>입니다. 현재 <strong>동양미래대학교</strong>에 재학 중이며,
+        <strong>부천 시온고등학교</strong>를 졸업했습니다.<br />
+        웹과 프론트엔드 개발에 열정을 가지고 있으며, 사용자 친화적인 UI/UX를 만드는 것에 관심이 많습니다.
+      </p>
+      <img src="https://via.placeholder.com/150" alt="이소현 프로필 이미지" class="rounded-full mx-auto">
+    </div>
+  </section>
+
+  <!-- 프로젝트 섹션 -->
+  <section id="projects" class="py-16 px-6">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-8">프로젝트</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">📌 유튜브 스팸 자동 신고 도구</h3>
+          <p class="mb-2">Python과 Selenium을 이용한 자동화 도구</p>
+          <a href="#" class="text-blue-600 hover:underline">GitHub 보기</a>
+        </div>
+        <div class="bg-white rounded-lg shadow p-6">
+          <h3 class="text-xl font-semibold mb-2">📌 도넛 소개 웹사이트</h3>
+          <p class="mb-2">HTML/CSS로 만든 반응형 상업용 샘플 페이지</p>
+          <a href="#" class="text-blue-600 hover:underline">라이브 데모</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 기술 스택 섹션 -->
+  <section id="skills" class="py-16 px-6 bg-gray-100">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl font-semibold mb-6">기술 스택</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full">HTML</span>
+        <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full">CSS / Tailwind</span>
+        <span class="bg-yellow-100 text-yellow-800 px-4 py-2 rounded-full">JavaScript</span>
+        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full">React</span>
+        <span class="bg-gray-200 text-gray-800 px-4 py-2 rounded-full">Git / GitHub</span>
+        <span class="bg-pink-100 text-pink-800 px-4 py-2 rounded-full">Figma</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact" class="py-16 px-6">
+    <div class="container mx-auto max-w-xl text-center">
+      <h2 class="text-3xl font-semibold mb-6">연락하기</h2>
+      <form class="space-y-4" action="https://formspree.io/f/your-form-id" method="POST">
+        <input type="text" name="name" placeholder="이름" required class="w-full p-3 border rounded">
+        <input type="email" name="email" placeholder="이메일" required class="w-full p-3 border rounded">
+        <textarea name="message" rows="5" placeholder="메시지" required class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">보내기</button>
+      </form>
+      <p class="mt-6 text-sm text-gray-600">또는 이메일: <a href="mailto:your@email.com" class="text-blue-500">your@email.com</a></p>
+    </div>
+  </section>
+
+  <!-- 푸터 -->
+  <footer class="bg-gray-900 text-white text-center py-6">
+    <p>&copy; 2025 이소현. All rights reserved.</p>
+  </footer>
+</body>
+</html>
